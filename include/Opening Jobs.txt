@@ -1,0 +1,8 @@
+Opening Jobs
+
+Job_id
+Company_id // foreign key
+Profile_name
+Total_opening
+Job_postdate
+Last_submission_date

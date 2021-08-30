@@ -1,0 +1,64 @@
+..........Create Job category...............
+
+CREATE table job_category(
+Id varchar(10) PRIMARY key not null,
+    Email varchar(100) not null,
+    Company_Name varchar(200) not null,
+    Company_Address varchar(300) not null,
+    Company_Work varchar(500) not null,
+    ESTD varchar(12) not null,
+    Company_Image varchar(500) not null
+    
+)
+.................Employed Candidate...................
+CREATE TABLE emp_candidate(
+   Candidate_id varchar(10) PRIMARY key not null,
+    Candidate_email varchar(200) not null,
+    Candidate_resume varchar(1000) not null,
+     Candidate_phone varchar(10) not null,
+     Candidate_name varchar(200) not null,
+     Candidate_address varchar(500) not null,
+    Createddate datetime DEFAULT now()
+    
+)
+...............Workers................................
+CREATE table workers(
+Worker_id varchar(10) PRIMARY key not null,
+    Worker_phone varchar(10) not null,
+    Worker_email varchar(200),
+    Worker_name varchar(200) not null,
+    Worker_address varchar(300) not null,
+    Worker_image varchar(500) not null,
+    Worker_work varchar(500) not null,
+    Createddate datetime DEFAULT now()
+    
+)
+...............Add Candidate................................
+CREATE TABLE add_candidate(
+     Candidate_name varchar(200) not null,
+     Candidate_work varchar(300) not null,
+    Candidate_image varchar(500),
+    Createddate datetime DEFAULT now()
+    
+)
+...............Add Company................................
+CREATE table add_company(
+Company_id varchar(10) PRIMARY key not null,
+    Company_name varchar(200) not null,
+    Company_image varchar(500)
+)
+...............Company Details................................
+CREATE TABLE company_details(
+Id varchar(14) PRIMARY key not null,
+    Email varchar(200) not null,
+    Company_Name varchar(300) not null,
+    Company_Address varchar(400) not null,
+    Company_Work varchar(300) not null,
+    ESTD varchar(100) not null,
+    Company_Image varchar(500),
+    NoofEmployes varchar(100),
+    Job_Name varchar(300) not null,
+    Time_Work varchar(200) not null,
+    About_Company varchar(400) not null,
+    Createddate datetime DEFAULT now()
+)
